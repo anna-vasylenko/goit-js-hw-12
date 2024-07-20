@@ -40,7 +40,7 @@ async function onFormSearch(e) {
       totalPages = Math.ceil(data.totalHits / per_page);
       refs.galleryListEl.innerHTML = renderMarkup(data.hits);
       gallery.refresh();
-      showBtnLoadMore();
+      if (data.totalHits > per_page) showBtnLoadMore();
     }
   } catch (error) {
     showErrorMessage(error);
