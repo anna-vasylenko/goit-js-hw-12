@@ -107,8 +107,6 @@ button {
 
 .loader-hidden {
   display: none;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .form-search {
@@ -158,6 +156,7 @@ button {
   color: #fff;
   cursor: pointer;
 }
+
 .btn-search:hover {
   background-color: #6c8cff;
 }
@@ -172,6 +171,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .gallery-item {
@@ -222,4 +222,26 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+.btn-load-more {
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 125px;
+}
+
+.btn-load-more:hover {
+  background-color: #6c8cff;
+}
+.hidden {
+  display: none;
 }
